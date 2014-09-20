@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:id="@+id/tv_message_who"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="ifanr"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/detail_comment" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv_message_who"
+            android:text="赞同该分享"
+            android:textSize="@dimen/detail_comment" />
+
+        <ImageView
+            android:id="@+id/iv_message_whose_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/user" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/tv_message_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@color/main_blue"
+            android:gravity="center"
+            android:text="100"
+            android:textColor="@color/white"
+            android:textSize="@dimen/detail_comment" />
+
+        <TextView
+            android:id="@+id/tv_message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/tv_message_num"
+            android:ellipsize="middle"
+            android:text="如何优雅地使用谷歌？"
+            android:textColor="@color/black"
+            android:textSize="@dimen/share_list_item_title" />
+    </RelativeLayout>
+
+</LinearLayout>

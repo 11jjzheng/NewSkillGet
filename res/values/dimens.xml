@@ -1,0 +1,39 @@
+<resources>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+
+    <dimen name="left_frame_size">18dip</dimen>
+    <dimen name="left_frame_size_b">22dip</dimen>
+    
+    <dimen name="left_right_space">15dp</dimen>
+    <dimen name="pin_word_size">25dp</dimen>
+    <dimen name="left_frame">20dp</dimen>
+    
+    <dimen name="share_list_item_title">18sp</dimen>
+    <dimen name="share_list_item_content">15sp</dimen>
+    <dimen name="share_list_item_info">12sp</dimen>
+    <dimen name="share_list_item_margin">3dp</dimen>
+    
+    <dimen name="bar_text_size">22sp</dimen>
+    
+    <dimen name="newskill_publish_text">18sp</dimen>
+    <dimen name="newskill_publish_between">18dp</dimen>
+    
+    <dimen name="detail_title">20sp</dimen>
+    <dimen name="detail_content">16sp</dimen>
+    <dimen name="detail_comment">15sp</dimen>
+    <dimen name="detail_other_info">12sp</dimen>
+    
+    <dimen name="text_left_right_space">8dp</dimen>
+    <dimen name="text_up_down_space">3dp</dimen>
+    
+    <dimen name="text_second_bar">18sp</dimen>
+    <dimen name="personal_user_info_text">15sp</dimen>
+    <dimen name="personal_user_info_dis">10dp</dimen>
+    <dimen name="personal_my_learn_title">18sp</dimen>
+    <dimen name="personal_my_learn_content">15sp</dimen>
+    <dimen name="personal_my_list_item">20sp</dimen>
+    
+</resources>

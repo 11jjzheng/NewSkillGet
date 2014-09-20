@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_margin="5dp" >
+
+        <TextView
+            android:id="@+id/tv_newskill_detail_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/detail_title" />
+
+        <RelativeLayout
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true" >
+
+            <ImageView
+                android:layout_width="28.0dip"
+                android:layout_height="28.0dip"
+                android:layout_centerInParent="true"
+                android:contentDescription="@null"
+                android:src="@drawable/me_head_bg" />
+
+            <cn.edu.stu.view.CircularImage
+                android:id="@+id/ci_newskill_detail_item_pic"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_centerInParent="true"
+                android:src="@drawable/pic" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_left_right_space"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_newskill_detail_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/detail_other_info" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_up_down_space"
+        android:layout_marginLeft="@dimen/text_left_right_space"
+        android:layout_marginRight="@dimen/text_left_right_space"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_newskill_detail_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/detail_content" />
+    </LinearLayout>
+
+<!--     <RelativeLayout -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_marginRight="@dimen/text_left_right_space" -->
+<!--         android:layout_gravity="center_vertical" > -->
+
+<!--         <ImageView -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:src="@drawable/comment" /> -->
+<!--     </RelativeLayout> -->
+
+    <LinearLayout
+        android:id="@+id/ll_newskill_comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+    <RelativeLayout 
+        android:id="@+id/rl_send_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center_vertical">
+        <Button 
+            android:id="@+id/btn_newskill_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:text="发送"/>
+        <EditText 
+            android:id="@+id/et_newskill_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btn_newskill_send"
+            android:layout_centerVertical="true"
+            android:hint="评论"/>
+    </RelativeLayout>
+
+</LinearLayout>

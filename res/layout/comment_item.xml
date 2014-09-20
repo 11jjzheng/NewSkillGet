@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="20dp"
+	    android:orientation="horizontal">
+<!-- 	    <TextView  -->
+<!-- 	        android:layout_width="wrap_content" -->
+<!-- 	        android:layout_height="wrap_content" -->
+<!-- 	        android:text="ifanr" -->
+<!-- 	        android:textSize="@dimen/detail_comment"/> -->
+<!-- 	    <TextView  -->
+<!-- 	        android:layout_width="wrap_content" -->
+<!-- 	        android:layout_height="wrap_content" -->
+<!-- 	        android:text="回复" -->
+<!-- 	        android:visibility="gone" -->
+<!-- 	        android:textSize="@dimen/detail_comment"/> -->
+<!-- 	    <TextView  -->
+<!-- 	        android:layout_width="wrap_content" -->
+<!-- 	        android:layout_height="wrap_content" -->
+<!-- 	        android:text="cfanr" -->
+<!-- 	        android:visibility="gone" -->
+<!-- 	        android:textSize="@dimen/detail_comment"/> -->
+<!-- 	    <TextView  -->
+<!-- 	        android:layout_width="wrap_content" -->
+<!-- 	        android:layout_height="wrap_content" -->
+<!-- 	        android:text=":" -->
+<!-- 	        android:textSize="@dimen/detail_comment"/> -->
+	    <TextView 
+	        android:id="@+id/tv_comment"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="ifanr:Google 查询简洁方便，仅需输入查询内容并敲一下回车键 (Enter)，或单击“Google 搜索”按钮即可得到相关资料。"
+	        android:layout_margin="5dp"
+	        android:textSize="@dimen/detail_comment"/>
+	</LinearLayout>
+</LinearLayout>

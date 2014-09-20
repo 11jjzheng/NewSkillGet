@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_begskill_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_blue"
+        android:gravity="center_vertical"
+        android:padding="7dip" >
+
+        <TextView
+            android:id="@+id/tv_begskill_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bar_text_size" />
+
+        <TextView
+            android:id="@+id/tv_begskill_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:text="跪求"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bar_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_begskill_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_begskill_bar"
+        android:layout_marginLeft="@dimen/left_right_space"
+        android:layout_marginRight="@dimen/left_right_space"
+        android:layout_marginTop="@dimen/newskill_publish_between"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题:"
+            android:textSize="@dimen/newskill_publish_text" />
+
+        <EditText
+            android:id="@+id/et_begskill_publish_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_begskill_tag"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_begskill_title"
+        android:layout_marginLeft="@dimen/left_right_space"
+        android:layout_marginRight="@dimen/left_right_space"
+        android:layout_marginTop="@dimen/newskill_publish_between"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标签:"
+            android:textSize="@dimen/newskill_publish_text" />
+
+        <EditText
+            android:id="@+id/et_begskill_publish_tag"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:hint="请给所求技能贴一个标签..."/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_begskill_description"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/ll_begskill_tag"
+        android:layout_marginLeft="@dimen/left_right_space"
+        android:layout_marginRight="@dimen/left_right_space"
+        android:layout_marginTop="@dimen/newskill_publish_between"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_begskill_publish_description"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/edittext_bg"
+            android:gravity="left"
+            android:hint="请简单输入你所求技能的描述..."
+            android:padding="5dp" />
+    </LinearLayout>
+
+</RelativeLayout>
